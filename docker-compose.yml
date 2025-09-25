@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  log-parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: log-parser-app
+    ports:
+      - "8501:8501"  # Streamlit web interface
+    volumes:
+      # Mount host log directory to container
+      - ./log:/app/log:rw
+      # Mount output directory to host  
+      - ./oplogs:/app/oplogs:rw
+      # Mount regex patterns file
+      - ./regex.json:/app/regex.json:rw
+      # Optional: mount custom patterns or config
+      - ./requirements.txt:/app/requirements.txt:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    command: ["streamlit"]
+
+  # Alternative service for running parser only
+  log-parser-batch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: log-parser-batch
+    volumes:
+      - ./log:/app/log:ro
+      - ./oplogs:/app/oplogs:rw
+      - ./regex.json:/app/regex.json:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: ["parser"]
+    profiles: ["batch"]  # Only start with --profile batch
+
+volumes:
+  log_data:
+    driver: local
+  output_data:
+    driver: local

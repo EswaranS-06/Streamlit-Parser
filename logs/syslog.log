@@ -1,0 +1,3 @@
+Jan 22 16:14:23 web-server sshd[1203]: 192.168.1.195 Failed login attempt for user admin
+Jan 22 16:15:45 web-server httpd[2456]: 10.0.0.25 GET request to /secure-area denied
+Jan 22 16:16:12 web-server firewall[3789]: 203.0.113.50 Connection blocked from suspicious IP

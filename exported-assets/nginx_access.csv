@@ -1,0 +1,4 @@
+line_number,log_type,ip,timestamp,message,method,path,protocol,raw_line,referer,size,status
+1,apache_access,172.16.0.1,01/Jan/2023:12:00:00 +0000,Mozilla/5.0 Safari/537.36,GET,/home,,"172.16.0.1 - - [01/Jan/2023:12:00:00 +0000] ""GET /home"" 200 1500 ""http://example.com"" ""Mozilla/5.0 Safari/537.36""",http://example.com,1500,200
+2,apache_access,203.0.113.1,01/Jan/2023:12:01:15 +0000,Python-requests/2.28.1,POST,/api/data,,"203.0.113.1 - - [01/Jan/2023:12:01:15 +0000] ""POST /api/data"" 201 800 ""-"" ""Python-requests/2.28.1""",-,800,201
+3,unknown,N/A,N/A,"10.1.1.50 - - [01/Jan/2023:12:02:30 +0000] ""DELETE /api/user/123"" 204 0 ""https://admin.example.com"" ""PostmanRuntime/7.29.2""",,,,"10.1.1.50 - - [01/Jan/2023:12:02:30 +0000] ""DELETE /api/user/123"" 204 0 ""https://admin.example.com"" ""PostmanRuntime/7.29.2""",,,

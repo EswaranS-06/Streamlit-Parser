@@ -1,0 +1,6 @@
+{
+    "syslog": {
+        "pattern": "^(?P<timestamp>\\w+\\s+\\d+\\s+\\d+:\\d+:\\d+)\\s+(?P<hostname>\\S+)\\s+(?P<process>[a-zA-Z0-9_\\-\\.]+)(?:\\[(?P<pid>\\d+)\\])?:\\s*(?:(?P<level>ERROR|WARN|INFO|DEBUG|CRITICAL):\\s*)?(?P<message>.*)$",
+        "timestamp_format": "%b %d %H:%M:%S"
+    }
+}

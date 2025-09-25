@@ -1,0 +1,4 @@
+line_number,log_type,ip,timestamp,message,raw_line
+1,unknown,N/A,N/A,2023-12-01T14:30:15.123Z [INFO] 192.168.1.10 - User authentication successful,2023-12-01T14:30:15.123Z [INFO] 192.168.1.10 - User authentication successful
+2,unknown,N/A,N/A,2023-12-01T14:31:22.456Z [WARN] 10.0.0.55 - Rate limit exceeded for API calls,2023-12-01T14:31:22.456Z [WARN] 10.0.0.55 - Rate limit exceeded for API calls
+3,unknown,N/A,N/A,2023-12-01T14:32:08.789Z [ERROR] 172.16.0.100 - Database connection failed,2023-12-01T14:32:08.789Z [ERROR] 172.16.0.100 - Database connection failed

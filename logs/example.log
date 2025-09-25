@@ -1,0 +1,6 @@
+Aug 25 10:15:30 webserver sshd: Failed password for invalid user admin from 192.168.1.100
+Aug 25 10:15:35 webserver systemd: Starting System Logging Service...
+192.168.1.50 - - [25/Aug/2025:10:15:40 +0000] "GET /index.html HTTP/1.1" 200 4871
+192.168.1.51 - - [25/Aug/2025:10:15:45 +0000] "POST /api/login HTTP/1.1" 401 238
+Aug 25 10:15:50 webserver apache2: Processing request from 192.168.1.52
+192.168.1.53 - - [25/Aug/2025:10:15:55 +0000] "GET /images/logo.png HTTP/1.1" 304 0

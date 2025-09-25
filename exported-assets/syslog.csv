@@ -1,0 +1,4 @@
+line_number,log_type,ip,timestamp,message,hostname,raw_line,source
+1,syslog,192.168.1.195,Jan 22 16:14:23,Failed login attempt for user admin,web-server,Jan 22 16:14:23 web-server sshd[1203]: 192.168.1.195 Failed login attempt for user admin,sshd[1203]
+2,syslog,10.0.0.25,Jan 22 16:15:45,GET request to /secure-area denied,web-server,Jan 22 16:15:45 web-server httpd[2456]: 10.0.0.25 GET request to /secure-area denied,httpd[2456]
+3,syslog,203.0.113.50,Jan 22 16:16:12,Connection blocked from suspicious IP,web-server,Jan 22 16:16:12 web-server firewall[3789]: 203.0.113.50 Connection blocked from suspicious IP,firewall[3789]
